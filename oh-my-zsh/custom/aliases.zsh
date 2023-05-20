@@ -39,5 +39,5 @@ alias vi='nvim'
 alias loadzsh='exec zsh'
 alias reload='source ~/.config/zsh/.zshrc'
 alias zshconfig="code ~/.config/zsh/.zshrc"
-alias aliases='cat /home/spereda/.config/oh-my-zsh/custom/aliases.zsh'
-alias caliases='code /home/spereda/.config/oh-my-zsh/custom/aliases.zsh'
+alias aliases='cat $HOME/.config/oh-my-zsh/custom/aliases.zsh'
+alias caliases='code $HOME/.config/oh-my-zsh/custom/aliases.zsh'
