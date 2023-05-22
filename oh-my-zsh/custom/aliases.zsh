@@ -8,7 +8,6 @@ alias gits='git status'
 alias gita='git add'
 alias gitc='git commit -m'
 alias gitp='git push origin main'
-alias exclude='!sh -c "echo "$1" >> .git/info/exclude" -'
 
 # system
 alias explorer='explorer.exe'
