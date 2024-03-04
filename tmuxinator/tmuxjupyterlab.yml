@@ -39,7 +39,6 @@ root: ~/projects/python/
 # attach: false
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-pre_window: pyenv global test_env
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
 startup_window: server
@@ -52,7 +51,7 @@ windows:
       # synchronize: after
       panes: 
         - JupyterLab:
-          - jupyter lab
+          - jupyter lab --no browser
         - Navigator:
           
         
