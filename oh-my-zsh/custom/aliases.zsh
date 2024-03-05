@@ -12,8 +12,8 @@ alias gitp='git push origin main'
 # system
 alias explorer='explorer.exe'
 alias modn='stat --format "%a"'
-alias sudate='sudo apt-get update'
-alias sudade='sudo apt-get upgrade'
+alias sudate='sudo apt update'
+alias sudade='sudo apt upgrade -y'
 alias myip='curl https://ipinfo.io/json'
 alias wget--hsts-file='~/.cache/wget-hsts'
 alias wind='/mnt/c/Users/spereda/My\ Documents'
@@ -24,6 +24,7 @@ alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 
 # tmux
 alias tmuxa='tmux attach -t'
+alias tmuxn='tmux new -s'
 alias tmuxl='tmux list-sessions'
 alias tmuxk='tmux kill-session -t'
 alias tmuxog='tmux show-options -g'

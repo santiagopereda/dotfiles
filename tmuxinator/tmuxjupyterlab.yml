@@ -51,7 +51,7 @@ windows:
       # synchronize: after
       panes: 
         - JupyterLab:
-          - jupyter lab --no browser
+          - jupyter lab --no-browser
         - Navigator:
           
         
