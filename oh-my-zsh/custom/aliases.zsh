@@ -30,7 +30,7 @@ alias tmuxk='tmux kill-session -t'
 alias tmuxog='tmux show-options -g'
 alias tmuxow='tmux show-options -w'
 alias tmuxos='tmux show-options -s'
-alias jmux='tmuxinator start tmuxjupyterlab'
+alias mux='tmuxinator'
 
 # vim
 alias vim='nvim'
