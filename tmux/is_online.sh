@@ -1,16 +1,18 @@
 #!/bin/zsh
 
-function is_online(){
-    while true; do
-        wget -q --spider http://google.com
-        if [ $? -eq 0 ]; then
-            echo 直
-            break
-        else
-            echo 睊
-        fi
-        sleep 5
-    done
-}
+IP="google.com" # Replace with the IP address you want to ping
+COUNT=1 # Number of ping attempts
 
-is_online
+speed=$(tail -1 /tmp/ping.txt)
+
+if [ $speed ]; then
+    ping_output="󰨀 $speed ms"
+    rm /tmp/ping.txt
+else
+    touch /tmp/ping.txt
+    ping_output="󱍢"
+fi
+echo "$ping_output"
+
+
+ping www.google.com -c 1 | tail -1 | cut -d "/" -f5 >> /tmp/ping.txt
