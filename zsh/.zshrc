@@ -122,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Customize the list of search engines that Zsh will use for these web searches
-ZSH_WEB_SEARCH_ENGINES=(reddit "https://www.reddit.com/search/?q=" duck "https://duckduckgo.com/")
+ZSH_WEB_SEARCH_ENGINES=(stacko "https://stackoverflow.com/search?q=" reddit "https://www.reddit.com/search/?q=" duck "https://duckduckgo.com/?q=")
 
 # Customize behaviour of ZSH history
 REPORTTIME=3                          # Report command running time if it is more than 3 seconds
