@@ -32,7 +32,7 @@ export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
 
 # oh-my-zsh
-export ZSH="$HOME/.config/oh-my-zsh"
+export ZSH="$XDG_DATA_HOME/zsh/oh-my-zsh"
 
 # Load nvm (to manage your node versions)
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
@@ -42,3 +42,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Set browser
 export BROWSER="/mnt/c/Program Files/Mozilla Firefox/firefox.exe"
 export GH_BROWSER="'/mnt/c/Program Files/Mozilla Firefox/firefox.exe'"
+
+# Set UV
+export PATH="$HOME/.local/bin:$PATH"
