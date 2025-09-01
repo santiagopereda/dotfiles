@@ -23,13 +23,13 @@ alias listpackages='dpkg --get-selections | grep -w "install" | cut -f1 > packag
 alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
 # tmux
-alias tmuxa='tmux attach -t'
-alias tmuxn='tmux new -s'
-alias tmuxl='tmux list-sessions'
-alias tmuxk='tmux kill-session -t'
-alias tmuxog='tmux show-options -g'
-alias tmuxow='tmux show-options -w'
-alias tmuxos='tmux show-options -s'
+alias tmuxa='tmux -f ~/.config/tmux/tmux.conf attach -t'
+alias tmuxn='tmux -f ~/.config/tmux/tmux.conf new -s'
+alias tmuxl='tmux -f ~/.config/tmux/tmux.conf list-sessions'
+alias tmuxk='tmux -f ~/.config/tmux/tmux.conf kill-session -t'
+alias tmuxog='tmux -f ~/.config/tmux/tmux.conf show-options -g'
+alias tmuxow='tmux -f ~/.config/tmux/tmux.conf show-options -w'
+alias tmuxos='tmux -f ~/.config/tmux/tmux.conf show-options -s'
 alias mux='tmuxinator'
 
 # vim
